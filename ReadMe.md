@@ -22,4 +22,4 @@
 - String Encoder(Base64 step)
 - Watermark
 
-![](https://i.imgur.com/HOL2L6n.gif)
+![](https://i.imgur.com/mfp019k.png)<br>![](https://i.imgur.com/sqjid2O.gif)
