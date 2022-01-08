@@ -12,7 +12,7 @@
 
 ## Features
 
-- Anti-de4dot
+- Anti-de4dot (Filled with Junk Methods)
 - Junks(Class + Methods in class(need to make them used ?))
 - ControlFlow
 - Hide Methods(need to fix it fail with this project)
