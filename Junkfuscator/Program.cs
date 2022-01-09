@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Crayon;
+﻿using Crayon;
 using dnlib.DotNet;
 using dnlib.DotNet.Writer;
 using Junkfuscator.Core.Protections;
+using System;
+using System.Linq;
 
 namespace Junkfuscator
 {
@@ -21,9 +18,14 @@ namespace Junkfuscator
             
             Logger.Info("Junkfuscating... I loved you I can't understand how you dare use it.. </3... ");
 
-
             Logger.Info("Encoding Strings...");
             StringEncoder.Execute(Module);
+
+            Logger.Info("Applying Proxy Strings & Ints...");
+            ProxyStringsAndInt.Execute(Module);
+
+            //Logger.Info("Applying Proxy Methods...");
+            //ProxyMethods.Execute(Module);
 
             Logger.Info("Injecting Anti-De4Dot Interfaces...");
             AntiDe4Dot.Execute(Module);
@@ -61,9 +63,6 @@ namespace Junkfuscator
             Logger.Info("[NetShield_Protector] Applying ControlFlow...");
             ControlFlow.Execute(Module);
 
-            /*Logger.Info("Hiding methods...");
-            HideMethods.Execute(Module);*/
-
             /*Logger.Info("Hiding methods..."); //Need to find a fix
             HideMethods.Execute(Module);*/
 
@@ -80,7 +79,6 @@ namespace Junkfuscator
             catch (Exception ex)
             {
                 Logger.Info(String.Format("Failed to protect {0} !\nError: {1}", Output.Green(fileName), Output.Red(ex.Message)));
-
 
                 ModuleWriterOptions x = new ModuleWriterOptions(Module);
                 x.MetadataOptions.Flags = MetadataFlags.KeepOldMaxStack;

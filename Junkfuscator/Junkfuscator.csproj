@@ -2,6 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+  	<LangVersion>9.0</LangVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{241C4B3F-72BE-4927-9F29-5BD7A5CB012D}</ProjectGuid>
@@ -56,6 +57,8 @@
     <Compile Include="Core\Protections\HideMethods.cs" />
     <Compile Include="Core\Protections\Mutations.cs" />
     <Compile Include="Core\Protections\NopAttack.cs" />
+    <Compile Include="Core\Protections\ProxyMethods.cs" />
+    <Compile Include="Core\Protections\ProxyStringsAndInt.cs" />
     <Compile Include="Core\Protections\Renamer.cs" />
     <Compile Include="Core\Protections\ROTStrings.cs" />
     <Compile Include="Core\Protections\StringEncoder.cs" />

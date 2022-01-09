@@ -2,10 +2,7 @@
 using dnlib.DotNet.Emit;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Junkfuscator.Core.Protections
 {
@@ -64,8 +61,6 @@ namespace Junkfuscator.Core.Protections
 				}
 			}
 		}
-
-		// Token: 0x060000B2 RID: 178 RVA: 0x00007DC0 File Offset: 0x00005FC0
 		public static void Mutate1(MethodDef method)
 		{
 			CilBody body = method.Body;
