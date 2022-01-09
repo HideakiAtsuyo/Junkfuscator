@@ -2,6 +2,7 @@
 
 ## Succeded Goals
 - Full of Junks (we can add more)
+- High Size Output (Actual Output => from 5kb to 51MB (10x original size))
 
 ## Goals
 
