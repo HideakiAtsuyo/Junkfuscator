@@ -21,6 +21,7 @@
 - NopAttack(add a bunch of nop in every methods (even junk ones))
 - Shift Strings(applied when strings are in base64)
 - String Encoder(Base64 step)
+- Call to Calli
 - Watermark
 
-![](https://i.imgur.com/mfp019k.png)<br>![](https://i.imgur.com/sqjid2O.gif)
+![](https://i.imgur.com/sKS14qv.png)<br>![](https://i.imgur.com/QbZW4wH.gif)
