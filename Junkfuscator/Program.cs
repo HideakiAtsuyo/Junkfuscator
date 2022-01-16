@@ -50,6 +50,9 @@ namespace Junkfuscator
                 }
             }
 
+            Logger.Info("Applying CallToCalli...");
+            CallToCalli.Execute(Module);
+
             Logger.Info("Injecting Junks [Class & Methods]...");
             ClassAndMethods.Execute(Module);
 
